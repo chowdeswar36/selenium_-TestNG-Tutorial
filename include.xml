@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- separating classes based on test folder and use include and exclude -->
+<suite name="Suite">
+	<test name="Test">
+		<classes>
+			<class name="com.cg.TestNg_Tutorial.Day_1">
+				<methods>
+					<include name="personalLoanwebcustomerdetails"></include>
+				</methods>
+			</class>
+			<class name="com.cg.TestNg_Tutorial.Day_2">
+				<methods>
+					<include name=".*login"></include>
+				</methods>
+			</class>
+			<class name="com.cg.TestNg_Tutorial.Day_3">
+				<methods>
+					<include name="apilogin"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
+<!-- <suite name="Suite"> <test name="webLoan"> <classes> <class name="com.cg.TestNg_Tutorial.Day_1"> 
+	</class> </classes> </test> <test name="MobileLoan"> <classes> <class name="com.cg.TestNg_Tutorial.Day_2"> 
+	<methods> <include name=".*login"></include> </methods> </class> </classes> 
+	</test> <test name="Api"> <classes> <class name="com.cg.TestNg_Tutorial.Day_3"> 
+	<methods> <include name="apilogin"></include> </methods> </class> </classes> 
+	</test> </suite> <suite name="Suite"> <test name="webLoan"> <classes> <class 
+	name="com.cg.TestNg_Tutorial.Day_1"> </class> </classes> </test> <test name="MobileLoan"> 
+	<classes> <class name="com.cg.TestNg_Tutorial.Day_2"> <methods> <include 
+	name=".*login"></include> </methods> </class> </classes> </test> <test name="Api"> 
+	<classes> <class name="com.cg.TestNg_Tutorial.Day_3"> <methods> <include 
+	name="apilogin"></include> </methods> </class> </classes> </test> </suite> 
+	<suite name="Suite"> <test name="webLoan"> <classes> <class name="com.cg.TestNg_Tutorial.Day_1"> 
+	</class> </classes> </test> <test name="MobileLoan"> <classes> <class name="com.cg.TestNg_Tutorial.Day_2"> 
+	<methods> <include name=".*login"></include> </methods> </class> </classes> 
+	</test> <test name="Api"> <classes> <class name="com.cg.TestNg_Tutorial.Day_3"> 
+	<methods> <include name="apilogin"></include> </methods> </class> </classes> 
+	</test> </suite> -->

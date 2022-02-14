@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- grouping by some name like smoke and make dependency using dependsOnGroups(we 
+	can depends on either same or another class and dependsOnMethods(we cannot 
+	depends on another class) -->
+<suite name="Suite">
+	<test name="test">
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.cg.TestNg_Tutorial.Day_1" />
+			<class name="com.cg.TestNg_Tutorial.Day_2" />
+			<class name="com.cg.TestNg_Tutorial.Day_3" />
+		</classes>
+	</test>
+</suite>
